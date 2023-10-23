@@ -28,6 +28,8 @@ BOOL suc = 0;
 WORD AnalogValue = 0;
 long VoltageValue = 0;
 
+int cc = 1;
+
 int main(int argc, char* argv[]) {
     //ポートをEPOS4に接続
     keyHandle = VCS_OpenDevice(deviceName, protocolStackName, interfaceName, portName, &errorCode);
